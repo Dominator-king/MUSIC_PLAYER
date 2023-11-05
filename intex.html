@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Audio Player</h1>
+
+      <button id="openModalBtn">Add New Files</button>
+      <div id="modal" class="modal">
+        <div class="modal-content" id="modalContent">
+          <span id="closeModalBtn" class="close">&times;</span>
+          <h2>Drag and Drop Items Here</h2>
+          <div id="dropzone" class="dropzone">Drop items here</div>
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <h3>Surah Fatiha</h3>
+          <audio controls src="./assets/001.mp3"></audio>
+        </tr>
+        <tr>
+          <h3>Surah Lahab</h3>
+          <audio controls src="./assets/111.mp3"></audio>
+        </tr>
+        <tr>
+          <h3>Surah Ikhlas</h3>
+          <audio controls src="./assets/112.mp3"></audio>
+        </tr>
+        <tr>
+          <h3>Surah Falaq</h3>
+          <audio controls src="./assets/113.mp3"></audio>
+        </tr>
+        <tr>
+          <h3>Surah Nas</h3>
+          <audio controls src="./assets/114.mp3"></audio>
+        </tr>
+      </table>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  background-color: #586cc3;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+  margin-block: 50px;
+  margin-inline: 30px;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+tr {
+  margin: 10px;
+  padding: 10px;
+}
+audio {
+  position: relative;
+  z-index: 1;
+}
+#openModalBtn {
+  transition: all 0.3s ease-in-out;
+
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  background-color: rgb(99, 133, 237);
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(13, 70, 255, 0.831),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+#openModalBtn:hover {
+  width: 100px;
+  box-shadow: 0 10px 10px 0px rgba(9, 54, 202, 0.831),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 60%;
+  max-width: 600px;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dropzone.active {
+  border-color: #007bff;
+}
+
+.dropzone.dragging {
+  background-color: #f0f0f0;
+}
